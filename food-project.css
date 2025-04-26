@@ -136,6 +136,9 @@ a:visited {
   /* border: 1px solid black; */
   margin-top: 10px;
 }
+.download-apps span:first-child:hover {
+  color: var(--orange-color);
+}
 .logo-page {
   width: 25%;
   height: 17vh;
@@ -342,8 +345,9 @@ a:visited {
 }
 
 .menu > ul > li:last-child .icon-search {
-  font-size: 20px;
+  font-size: 22px;
   padding-bottom: 3px;
+  color: rgb(51, 51, 56);
 }
 
 /* TABLET RESPONSIVE */
@@ -368,29 +372,29 @@ a:visited {
     left: 85%;
   }
   .hamburger-menu span {
-    width: 37px;
-    height: 7px;
+    width: 32px;
+    height: 5.5px;
     border: 3px solid rgb(51, 51, 56);
     background-color: rgb(51, 51, 56);
-    margin: 1.5px auto;
+    margin: 1.1px auto;
     display: flex;
     flex-direction: column;
     transition: all 0.3s ease-in-out;
     z-index: 200;
   }
   .hamburger-menu span:first-child {
-    width: 37px;
+    width: 32px;
     height: 17px;
     background-color: rgb(51, 51, 56);
-    border-top-left-radius: 100%;
-    border-top-right-radius: 100%;
-    border-bottom-right-radius: 30%;
-    border-bottom-left-radius: 30%;
+    border-top-left-radius: 800px;
+    border-top-right-radius: 800px;
+    border-bottom-right-radius: 200px;
+    border-bottom-left-radius: 200px;
   }
   .hamburger-menu span:first-child::after {
     content: "";
-    width: 2.3px;
-    height: 2.3px;
+    width: 1.8px;
+    height: 1.8px;
     border-radius: 50%;
     background-color: white;
     position: relative;
@@ -398,8 +402,8 @@ a:visited {
   }
   .hamburger-menu span:first-child::before {
     content: "";
-    width: 2.3px;
-    height: 2.3px;
+    width: 1.8px;
+    height: 1.8px;
     border-radius: 50%;
     background-color: white;
     position: relative;
@@ -408,8 +412,8 @@ a:visited {
   }
   .hamburger-menu span:nth-child(2)::before {
     content: "";
-    width: 2.3px;
-    height: 2.3px;
+    width: 1.8px;
+    height: 1.8px;
     border-radius: 50%;
     background-color: white;
     position: absolute;
@@ -426,7 +430,7 @@ a:visited {
     visibility: hidden;
   }
   .hamburger-menu span:nth-child(2) {
-    border-radius: 25%;
+    border-radius: 35%;
   }
   .hamburger-menu span:last-child {
     border-bottom-right-radius: 50%;
@@ -597,8 +601,8 @@ a:visited {
     visibility: visible;
     opacity: 1;
     object-fit: cover;
-    width: 70%;
-    max-width: 60%;
+    width: 65%;
+    max-width: 65%;
     height: 10.5vh;
     transform: translateX(-70%);
   }
@@ -616,11 +620,16 @@ a:visited {
     /* visibility: hidden;
     opacity: 0; */
     position: absolute;
-    top: 0;
+    top: -30px;
     left: 0;
     width: 100%;
     max-width: 100%;
     height: auto;
+  }
+  .hamburger-menu span:nth-child(2)::before {
+    position: absolute;
+    left: 62%;
+    top: 22%;
   }
 }
 @media (max-width: 590px) {
@@ -634,10 +643,10 @@ a:visited {
     visibility: visible;
     opacity: 1;
     object-fit: cover;
-    width: 80%;
-    max-width: 80%;
-    height: 9vh;
-    transform: translateX(-60%);
+    width: 90%;
+    max-width: 90%;
+    height: 10vh;
+    transform: translateX(-50%);
   }
 }
 /* HIRO-IMAGE */
@@ -745,7 +754,7 @@ a:visited {
   }
 
   .hiro-image .titel-page h1 {
-    font-size: 2.3em;
+    font-size: 2.2em;
   }
 
   .hiro-image .titel-page span {
@@ -1373,6 +1382,9 @@ a:visited {
   .part-three-six-picture ul li {
     width: 95%;
   }
+  .part-three-big-part .part-three-big-part-text button {
+    width: 30%;
+  }
 }
 .part-four {
   width: 100%;
@@ -1566,7 +1578,7 @@ a:visited {
 }
 .big-pictures-left-image {
   width: 100%;
-  height: 73vh;
+  height: 60%;
   object-fit: cover;
   display: flex;
   justify-content: center;
@@ -1575,19 +1587,19 @@ a:visited {
 
 .big-pictures-left-image img {
   width: 100%;
-  height: 73vh;
+  height: 100%;
   object-fit: cover;
 }
 .big-pictures-left-text {
   width: 90%;
-  height: 44vh;
+  height: 40%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   position: relative;
   background-color: white;
-  padding-top: 30px;
+  padding-top: 5%;
 }
 .big-pictures-left-text:hover {
   transform: scale(unset);
@@ -1609,7 +1621,7 @@ a:visited {
   font-weight: 400;
   color: rgb(103, 97, 90);
   position: relative;
-  padding-bottom: 20px;
+  padding-bottom: 2%;
 }
 .part-five-big-part-admin-deta .admin-deta {
   width: 100%;
@@ -1656,7 +1668,7 @@ a:visited {
   line-height: 31px;
   font-weight: 400;
   color: rgb(103, 97, 90);
-  padding-top: 20px;
+  padding-top: 1%;
 }
 .part-five-big-part-paragraph p {
   transform: scale(unset);
@@ -1667,7 +1679,7 @@ a:visited {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  margin-top: 20px;
+  margin-top: 1%;
 }
 .part-five-big-part-button span {
   border-bottom: 1px solid black;
@@ -1967,12 +1979,12 @@ a:visited {
 @media screen and (max-width: 1024px) {
   .part-five-container {
     width: 100%;
-    height: 380vh;
-    transform: translateY(60%);
+    /* height: 380vh; */
+    transform: translateY(65%);
   }
   .part-five {
     width: 90%;
-    height: 380vh;
+    /* height: 380vh; */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -1980,7 +1992,7 @@ a:visited {
   }
   .part-five-titel {
     width: 100%;
-    height: 30vh;
+    /* height: 30vh; */
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -1989,7 +2001,7 @@ a:visited {
   }
   .part-five-titel-text {
     width: 100%;
-    height: 20vh;
+    /* height: 20vh; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1998,7 +2010,7 @@ a:visited {
   }
   .part-five-titel-button {
     width: 30%;
-    height: 10vh;
+    /* height: 10vh; */
     display: flex;
     justify-content: center;
     margin-top: -20px;
@@ -2009,7 +2021,7 @@ a:visited {
 
   .part-five-pictures {
     width: 100%;
-    height: 370vh;
+    /* height: 370vh; */
     display: flex;
     flex-direction: column;
     gap: unset;
@@ -2022,7 +2034,7 @@ a:visited {
   }
   .part-five-pictures-right {
     width: 100%;
-    height: 160vh;
+    /* height: 160vh; */
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -2032,26 +2044,47 @@ a:visited {
   }
   .part-five-pictures-left-up {
     width: 100%;
-    height: 120vh;
+    /* height: 120vh; */
   }
   .big-pictures-left-image {
     width: 100%;
-    height: 73vh;
+    /* height: 73vh; */
   }
   .big-pictures-left-image img {
     width: 100%;
-    height: 73vh;
+    /* height: 73vh; */
   }
   .big-pictures-left-text {
     width: 90%;
-    height: 47vh;
+    /* height: 47vh; */
   }
   .part-five .part-five-titel p {
     width: 90%;
     padding-bottom: unset;
   }
   .part-six-container {
-    transform: translateY(450%);
+    transform: translateY(540%);
+  }
+}
+@media (max-width: 640px) {
+  .big-pictures-left-image {
+    height: 50%;
+  }
+  .big-pictures-left-image img {
+    height: 100%;
+    object-fit: cover;
+  }
+  .big-pictures-left-text {
+    width: 90%;
+    height: 50%;
+  }
+  .part-five-big-part-admin-deta::after {
+    position: absolute;
+    top: 50%;
+    left: 0px;
+  }
+  .part-five-big-part-paragraph p {
+    padding-top: unset;
   }
 }
 .part-six-container {
@@ -2302,7 +2335,7 @@ footer {
 @media screen and (max-width: 1024px) {
   .part-seven-gallery {
     width: 100%;
-    transform: translateY(830%);
+    transform: translateY(1030%);
   }
   .part-seven-gallery ul {
     width: 100%;
@@ -2315,12 +2348,13 @@ footer {
   .footer-container {
     width: 100%;
     height: auto;
-    transform: translateY(890%);
+    transform: translateY(1060%);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
+
   .logo-page-footer {
     width: 100%;
     height: 50vh;
@@ -2387,5 +2421,9 @@ footer {
   }
   .Get-our-app {
     height: 20vh;
+    transform: translateY(20%);
+  }
+  .footer-sub {
+    transform: translateY(4900%);
   }
 }
